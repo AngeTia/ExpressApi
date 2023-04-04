@@ -41,3 +41,6 @@
 
 *Install Express et le module de connexion à postgresql*
 > npm i express pg
+
+*Start server*
+> node index.js
