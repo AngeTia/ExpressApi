@@ -9,6 +9,7 @@ app.use(
         extended: true,
     })
 )
+
 const db = require('./queries')
 app.get('/users', db.getUsers)
 app.get('/users/:id', db.getUserById)
