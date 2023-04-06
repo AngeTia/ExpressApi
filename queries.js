@@ -1,7 +1,7 @@
 // Permet à NodeJs de manipuler notre base de données
 const Pool = require('pg').Pool
 
-// Connexion à la base de données
+// DB
 const pool = new Pool({
     user: 'me',
     host: 'localhost',

@@ -13,39 +13,42 @@
  *On se connecte à la nouvelle base de donnée*<br>
  > postgres=> \c api<br>
    >You are now connected to database "api" as user "me".<br>
- > api=>
- *On crée notre table*
-    CREATE TABLE users (
-    ID SERIAL PRIMARY KEY,
-    name VARCHAR(30),
-    email VARCHAR(30)
-    );
+ > api=><br>
+ *On crée notre table*<br>
+    CREATE TABLE users (<br>
+    ID SERIAL PRIMARY KEY,<br>
+    name VARCHAR(30),<br>
+    email VARCHAR(30)<br>
+    );<br>
 
- *On ajoute des données*
- INSERT INTO users (name, email)
-  VALUES ('Jerry', 'jerry@example.com'), ('George', 'george@example.com');
+ *On ajoute des données*<br>
+ INSERT INTO users (name, email)<br>
+  VALUES ('Jerry', 'jerry@example.com'), ('George', 'george@example.com');<br>
 
 # Configuration Express Server
 
-> mkdir node-api-postgres
-> cd node-api-postgres
+> mkdir node-api-postgres<br>
 
-*Dans le package.json on met:*
-{
-  "name": "node-api-postgres",
-  "version": "1.0.0",
-  "description": "RESTful API with Node.js, Express, and PostgreSQL",
-  "main": "index.js",
-  "license": "MIT"
+> cd node-api-postgres<br>
+
+*Dans le package.json on met:*<br>
+{<br>
+  "name": "node-api-postgres",<br>
+  "version": "1.0.0",<br>
+  "description": "RESTful API with Node.js, Express, and PostgreSQL",<br>
+  "main": "index.js",<br>
+  "license": "MIT"<br>
 }
 
-*Install Express et le module de connexion à postgresql*
-> npm i express pg
+*Install Express et le module de connexion à postgresql*<br>
 
-*Start server*
-> node index.js
+> npm i express pg<br>
 
-# Objectif
+*Start server*<br>
+
+> node index.js<br>
+
+# Fonctionnement
 
 Ce code est un exemple d'une API Node.js basée sur Express, qui utilise également le module body-parser pour parser les données d'une requête. <br>
 
